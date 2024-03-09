@@ -4,7 +4,7 @@ services:
     container_name: ord
     build:
       context: .
-    command:  ["--data-dir", "/index-data", "--rpc-url", "vmmvtnropan2pydqw6bezvbjvhd7iebwsjzpegb3x7bmah6kez7vmxyd.onion", "server"]
+    # command:  ["--data-dir", "/index-data", "--rpc-url", "vmmvtnropan2pydqw6bezvbjvhd7iebwsjzpegb3x7bmah6kez7vmxyd.onion", "server"]
     volumes:
       - index_data:/index-data
     environment:

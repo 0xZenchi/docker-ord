@@ -4,7 +4,7 @@ services:
     container_name: ord
     build:
       context: .
-    command:  ["--data-dir", "/index-data", "--rpc-url", "umbrel.local", "server", "--http-port", "8080"]
+    command:  ["--data-dir", "/index-data", "--rpc-url", "69.53.58.28:8332", "server", "--http-port", "8080"]
     volumes:
       - index_data:/index-data
     environment:

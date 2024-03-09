@@ -13,8 +13,10 @@ services:
     ports:
       - "8999:8080"
     networks:
-      - bridge
+      - host
 
+networks:
+  host:
 volumes:
   index_data:
 

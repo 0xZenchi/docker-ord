@@ -4,7 +4,7 @@ services:
     container_name: ord
     build:
       context: .
-    command:  ["--data-dir", "/index-data", "--rpc-url", "s444jy4lmzwf6mtix776q35k6njhpminkswrndifnm27bvv2tqkclwad.onion", "server", "--http-port", "8332"]
+    command:  ["--data-dir", "/index-data", "--rpc-url", "umbrel.local", "server", "--http-port", "8080"]
     volumes:
       - index_data:/index-data
     environment:
@@ -12,11 +12,7 @@ services:
       - ORD_BITCOIN_RPC_PASS=$RPC_PASSWORD
     ports:
       - "8999:8080"
-    networks:
-      - host
 
-networks:
-  host:
 volumes:
   index_data:
 
